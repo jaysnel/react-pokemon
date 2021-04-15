@@ -37,12 +37,22 @@
   }
 }
 
-
 .full-poke-list {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-
   max-width: 100%;
   width: 1200px;
   margin: auto;
+}
+
+.full-poke-list div {
+  max-width: 100%;
+  width: 300px;
+  margin: auto;
+}
+
+@media(min-width: 768px) {
+  .full-poke-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

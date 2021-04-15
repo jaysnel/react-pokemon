@@ -7,7 +7,6 @@ const Home = () => {
   let [originalFullPokeList, setOriginalFullPokeList] = useState([]);
   let [pokemonData, setPokemonData] = useState([]);
   let [isPending, setIsPending] = useState(true);
-  //let [filteredPokemonList, setFilteredPokemonList] = useState([]);
 
 
 
