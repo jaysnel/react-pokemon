@@ -7,7 +7,7 @@ const Pokemon = () => {
 
     return ( 
         <div>
-            {FetchPokemon && <FetchPokemon url={url}/>}
+            <FetchPokemon url={url}/>
         </div>
      );
 }
