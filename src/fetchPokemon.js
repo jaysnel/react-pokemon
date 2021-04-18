@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Loader from './Loader.js';
 
 const FetchPokemon = (url) => {
     let pokemonUrl = url.url;
@@ -20,10 +21,10 @@ const FetchPokemon = (url) => {
             });
 
     }, [pokemonUrl]);
-    
+
     return ( 
         <div>
-            {isPending && <div>Loading...</div>}
+            {isPending && <Loader/>}
             {
             !isPending && 
             <div>
