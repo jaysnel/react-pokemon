@@ -6,7 +6,7 @@ const fullPokeList = ({title, fullList, theClassName}) => {
                 {fullList.map((pokemon) => (
                 <div className="pokemon" key={pokemon.url}>
                     <h1>{pokemon.name.toUpperCase()}</h1>
-                    <a href={pokemon.url}>Get Data</a>
+                    <a href={`/pokemon/${pokemon.name}`}>Get Data</a>
                 </div>
             ))}
             </div>
